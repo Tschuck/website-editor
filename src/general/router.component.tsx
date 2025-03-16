@@ -11,11 +11,11 @@ import {
 
 export const pageRoutes = [
   {
-    path: "/",
+    path: "",
     element: <OverviewPage />,
   },
   {
-    path: "/:id",
+    path: ":id",
     element: <EditorPage />,
   },
 ].map((entry) => ({ ...entry, nodeRef: createRef() }));
