@@ -2,6 +2,7 @@ import { EditorPage } from "@/pages/editor.page";
 import { OverviewPage } from "@/pages/overview.page";
 import { createRef } from "react";
 import {
+  Navigate,
   Outlet,
   RouteObject,
   RouterProvider,
@@ -22,6 +23,10 @@ export const pageRoutes = [
 export const routes: RouteObject[] = [
   {
     path: "/",
+    element: <Navigate to="/website-editor" replace />,
+  },
+  {
+    path: "/website-editor",
     element: <Outlet />,
     children: pageRoutes,
   },
