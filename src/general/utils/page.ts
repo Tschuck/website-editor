@@ -1,5 +1,6 @@
 import {
   LayoutType,
+  TextDisplayType,
   WebsitePage,
 } from "@/general/interfaces/website-page.interface";
 
@@ -8,6 +9,7 @@ export function createEmptyPage(title: string): WebsitePage {
   const newPage = {
     id: self.crypto.randomUUID(),
     layout: LayoutType.imageTop,
+    textDisplay: TextDisplayType.one,
     slug: id,
     summary: "",
     title,
@@ -15,18 +17,22 @@ export function createEmptyPage(title: string): WebsitePage {
       buttonLink: "",
       cards: [],
       image1: {
+        description: "",
         downloadLink: "",
         referenceLink: "",
       },
       image2: {
+        description: "",
         downloadLink: "",
         referenceLink: "",
       },
       image3: {
+        description: "",
         downloadLink: "",
         referenceLink: "",
       },
       markdown: "",
+      markdown2: "",
     },
   };
 
