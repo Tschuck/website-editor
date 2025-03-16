@@ -1,0 +1,39 @@
+{
+  "add-card": "Karte hinzufügen",
+  "add-page": "Seite hinzufügen",
+  "back-to-overview": "Zurück zur Übersicht",
+  "delete": "löschen",
+  "export": "Export",
+  "image": "Bild",
+  "image-download": "Download-Link",
+  "image-reference": "Impressums-Link",
+  "import-definition": "Website Konfigration importieren",
+  "layout": "Layout",
+  "description": "Beschreibung",
+  "layout-type": {
+    "big-image-right": "Grosses Bild rechts",
+    "cards": "Karten",
+    "image-top": "Bild oben",
+    "text-only": "Nur Text",
+    "three-images-left": "Drei Bilder links",
+    "three-images-right": "Drei Bilder rechts",
+    "three-images-top": "Drei Bilder oben",
+    "two-images-left": "Zwei Bilder links",
+    "two-images-right": "Zwei Bilder rechts",
+    "two-texts": "Zwei Texte"
+  },
+  "markdown": "Markdown",
+  "new-page": "Neue Seite",
+  "page-config": "Website Konfiguration",
+  "phone-number": "Telefonnummer",
+  "preview": "Vorschau",
+  "really-delete": "Wirklich löschen?",
+  "slug": "Slug",
+  "summary": "Zusammenfassung",
+  "title": "Titel",
+  "text-display": "Text Darstellung",
+  "text-display-type": {
+    "one": "Ein Text",
+    "side-by-side": "Zwei nebeneinander"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "defaultType": "feat",
+  "jiraAppend": "]",
+  "jiraLocation": "post-body",
+  "jiraOptional": true,
+  "jiraPrefix": "",
+  "jiraPrepend": "[",
+  "path": "./node_modules/@digitalroute/cz-conventional-changelog-for-jira",
+  "skipBreaking": true,
+  "skipScope": false,
+  "types": [
+    "feat",
+    "fix",
+    "refactor",
+    "chore",
+    "test",
+    "docs",
+    "build",
+    "ci",
+    "perf",
+    "revert",
+    "style"
+  ]
+}

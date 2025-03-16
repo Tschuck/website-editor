@@ -1,0 +1,143 @@
+html {
+  overflow: hidden;
+}
+
+html, body, #root {
+  height: 100vh;
+}
+
+@font-face {
+  font-family: archivo;font-style: normal;font-weight:500;
+  src:url(../fonts/Archivo-Medium.ttf)
+}
+
+@font-face {
+  font-family: archivo;font-style: normal;font-weight:600;
+  src:url(../fonts/Archivo-Semibold.ttf)
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(../fonts/Inter-VariableFont.ttf);
+}
+
+@font-face {
+  font-family: YesevaOne;
+  src: url(../fonts/YesevaOne-Regular.ttf);
+}
+
+.font-archivo {
+  font-family: "Archivo", cursive;
+}
+
+.font-inter {
+  font-family: "Inter";
+}
+
+.font-yeseva {
+  font-family: "YesevaOne";
+}
+
+.markdown-wrapper h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.markdown-wrapper h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.markdown-wrapper h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.markdown-wrapper h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.markdown-wrapper h5 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+@media (width < 48rem) {
+  .markdown-wrapper h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .markdown-wrapper h2 {
+    font-size: 1.8rem;
+  }
+
+  .markdown-wrapper h3 {
+    font-size: 1.5rem;
+  }
+
+  .markdown-wrapper h4 {
+    font-size: 1.3rem;
+  }
+
+  .markdown-wrapper h5 {
+    font-size: 1rem;
+  }
+}
+
+.markdown-wrapper p {
+  margin-bottom: 1rem;
+}
+
+.markdown-wrapper a {
+  color: #ec7f86;
+}
+
+.markdown-wrapper a:after {
+  content: '↗';
+  padding-left: 8px;
+}
+
+.markdown-wrapper ul, .markdown-wrapper ol {
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+.markdown-wrapper ul li {
+  list-style:disc;
+}
+
+.markdown-wrapper ol li {
+  list-style: decimal;
+}
+
+.page-transition {
+  position: absolute;
+  left: 15px;
+  right: 15px;
+}
+
+.page-transition-enter {
+  opacity: 0;
+  transform: scale(1.1);
+}
+
+.page-transition-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 50ms, transform 50ms;
+}
+
+.page-transition-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.page-transition-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 50ms, transform 50ms;
+}
