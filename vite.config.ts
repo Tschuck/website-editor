@@ -5,7 +5,7 @@ import tsconfigPaths from "vite-tsconfig-paths";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), tsconfigPaths(), splitVendorChunkPlugin()],
-  base: "./",
+  base: "/website-editor",
   server: {
     port: 3112,
     allowedHosts: ["rhino-glorious-thankfully.ngrok-free.app"],

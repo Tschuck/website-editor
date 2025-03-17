@@ -67,6 +67,7 @@
     "preview": "vite preview",
     "serve": "serve -s ./dist -l 3000"
   },
+  "homepage": "https://tschuck.github.io/website-editor",
   "type": "module",
   "version": "1.0.0"
 }

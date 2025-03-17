@@ -2,20 +2,19 @@ import { EditorPage } from "@/pages/editor.page";
 import { OverviewPage } from "@/pages/overview.page";
 import { createRef } from "react";
 import {
-  Navigate,
   Outlet,
   RouteObject,
   RouterProvider,
-  createBrowserRouter,
+  createHashRouter,
 } from "react-router-dom";
 
 export const pageRoutes = [
   {
-    path: "",
+    path: "/",
     element: <OverviewPage />,
   },
   {
-    path: ":id",
+    path: "/:id",
     element: <EditorPage />,
   },
 ].map((entry) => ({ ...entry, nodeRef: createRef() }));
@@ -23,10 +22,6 @@ export const pageRoutes = [
 export const routes: RouteObject[] = [
   {
     path: "/",
-    element: <Navigate to="/website-editor" replace />,
-  },
-  {
-    path: "/website-editor",
     element: <Outlet />,
     children: pageRoutes,
   },
@@ -35,7 +30,7 @@ export const routes: RouteObject[] = [
 export function Router() {
   return (
     <>
-      <RouterProvider router={createBrowserRouter(routes)} />
+      <RouterProvider router={createHashRouter(routes)} />
     </>
   );
 }
